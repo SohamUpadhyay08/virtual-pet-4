@@ -8,21 +8,23 @@ var tshedule
 var GameState 
 var milk,milkImg,milk2Img
 var garden,washroom,bedroom,livingroom
+var backGround;
 
 
 function preload()
 {
   //load images here
-  dogImg = loadImage("dog.png")
-  happyDog = loadImage("happydog.png")
+  dogImg = loadImage("dog.png");
+  happyDog = loadImage("happydog.png");
   garden=loadImage("gardern.png");
   washroom=loadImage("Wash Room.png");
   bedroom=loadImage("Bed Room.png");
-  milkImg = loadImage("food.png")
-  milk2Img = loadImage("dogFood.png")
+  milkImg = loadImage("food.png");
+  milk2Img = loadImage("dogFood.png");
   livingroom = loadImage("living.png");
-   timetable = loadImage("timetable.png");
-   tshedule = loadImage("shedule.png");
+  timetable = loadImage("timetable.png");
+  tshedule = loadImage("shedule.png");
+  backGround = loadImage("back.png")
 }
 
 function setup() {
@@ -53,7 +55,7 @@ function setup() {
 }
 
 function draw() { 
-  background("aquamarine") 
+  background(backGround) 
   foodObj.display();
   //writeStock(foodS);
 
